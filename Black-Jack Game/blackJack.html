@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Jack Game</title>
+    <link rel="stylesheet" href="style2.css">
+</head>8
+
+
+<body>
+    <div class="body">
+        <div class="blj">
+            <div class="header_main">
+                <h1 class="header"> Black <span style="color: red;">Jack</span> <img src="/card.png" class="img"></h1>
+            </div>
+            <div class="main_body2" id="mainBody2">
+                <p class="text">Enter your name: <input type="text" id="nameEl" placeholder="name"></p>
+                <p class="text">Enter your balance : <input type="number" id="moneyEl" placeholder="Enter your amount">
+                </p>
+                <button onclick="mainBodyVisble()" class="text3">SUBMIT</button>
+                <br>
+                <p class="text2" id="previous"></p>
+            </div>
+            <div class="main_body" id="mainBody">
+                <p class="text" id="result">Do you want to play the Game?</p>
+                <p class="text" id="cards">Cards:</p>
+                <p class="text" id="total">Total:</p>
+                <div>
+                    <p class="text2" id="previous"></p>
+                </div>
+                <div>
+                    <button onclick="gameStart()" class="btn2">Start Game</button>
+                    <button onclick="newCard()" class="btn3">New Card</button>
+                </div>
+                <div>
+                    <button onclick="restartGame()" class="btn3">Restart Game</button>
+                    <button onclick="newGame()" class="btn2">Enter New ID</button>
+                    <p class="text2" id="player"></p>
+                    <p class="text2" id="balance"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/Practice/bj.js"></script>
+</body>
+
+</html>
